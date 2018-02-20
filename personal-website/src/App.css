@@ -1,0 +1,211 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+ul.main-nav {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  /*margin-top: -10px;*/
+  height: 40px;
+}
+
+ul.main-nav li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /*height: 100px;*/
+  margin-top: 5px;
+}
+.main-nav a {
+  font-size: .95em;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline;
+  padding: 1em;
+  /*height: 60px;*/
+  /*padding-left: 1em;*/
+  transition: .2s;
+  /*margin-bottom: -10px;*/
+  /*margin-top: 10px;*/
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+.main-nav a:hover,
+.main-nav .active {
+  color: #fff;
+  background: #3b80d1;
+}
+header {
+  margin-top: 2px;
+  background: #edeff0;
+  height: 50px;
+  /*margin-top: 0px;*/
+}
+.NavHeader {
+  text-align: left;
+  /*margin-right: 300px;*/
+}
+
+.projectPhoto {
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 20px;
+  border: 3px solid grey;
+  float: left;
+  margin-left: 35px;
+}
+.photoWithTitle {
+  width: 30%;
+  float: left;
+}
+
+.projectTitle {
+  display: inline;
+  /*position: absolute;*/
+}
+.projectTitle h2 {
+  /*width: 30%;*/
+  display: inline-block;
+  text-align: center;
+  text-decoration:
+}
+.projectDescription {
+  width: 65%;
+  float: right;
+  /*margin-left: 500px;*/
+}
+.photoWithTitle {
+  width: 30%;
+
+}
+.photoWithTitle h2 {
+
+}
+.projectOverview {
+  display: block;
+  /*position: relative;*/
+  height: 600px;
+}
+.projectDescription {
+  text-align: left;
+  padding-right: 25px;
+}
+.projectDescription h4 {
+  font-weight: 800;
+  /*margin-bottom: -10px;*/
+}
+
+.EatReviewOverview {
+  width: 95%;
+  padding: 1em;
+  overflow:hidden;
+}
+.EatReviewTitle {
+  width: 30%;
+  float: left;
+  /*margin-left: 10px;*/
+  display: inline-block;
+  margin-left: 10px;
+}
+.EatReviewDescription {
+  width: 65%;
+  text-align: left;
+  float: right;
+  padding-right: 25px;
+}
+
+
+
+.slideshow {
+  width: 380px;
+  height: 480px;
+  /*background: #000;*/
+  display: block;
+  position: relative;
+  margin-bottom: 100px;
+}
+.slideshow-slides {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.slideshow-slides li {
+  display: inline-block;
+  /*position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;*/
+  margin: 0;
+  padding: 0;
+  transition: .2s;
+  opacity: 0;
+}
+.slideshow-slides li.active {
+  opacity: 1;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+figcaption {
+  position: absolute;
+  bottom: 10;
+  left: 0;
+  right: 0;
+  color: black;
+  padding: 10px;
+}
+
+.slideshow-dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  list-style: none;
+}
+.slideshow-dots li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.slideshow-dots a {
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: blue;
+  border-radius: 10px;
+  text-indent: -9990px;
+  opacity: .5;
+  transition: .3s;
+}
+.slideshow-dots li.active a {
+  opacity: 1;
+}
