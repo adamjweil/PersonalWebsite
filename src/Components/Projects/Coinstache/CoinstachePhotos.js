@@ -49,17 +49,19 @@ class CoinstachePhotos extends React.Component {
             <p>{this.state.mainPhotoBlurb}</p>
           </div>
         </div>
-        <div className="coinSlides">
-          {
-            slides.map((slide, index) => (
-              <div className={ (index == this.state.activeIndex) ? 'coinActiveSlide': 'coinSlides'}>
-                <button><img src={ slide.imageUrl }
+        <div className="coinSlideContainer">
+          <div className="coinSlides">
+            {
+              slides.map((slide, index) => (
+                <div className={ (index == this.state.activeIndex) ? 'coinActiveSlide': 'coinSlides'}>
+                  <button><img src={ slide.imageUrl }
                     onClick={ (event)=> this.jumpToSlide(index) } />
-                  </button>
+                </button>
 
               </div>
             ))
           }
+        </div>
         </div>
       </div>
     )
