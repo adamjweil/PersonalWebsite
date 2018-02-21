@@ -21,10 +21,26 @@
 .App-intro {
   font-size: large;
 }
-
+div,button,span,strong{font-family:Open;}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+p {
+  font-family: Arvo;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+}
+h3 {
+  font-family: Arvo;
+  font-weight: bold;
+}
+h2 {
+  font-family: Arvo;
+  font-size: 30px;
+  font-weight: 900;
 }
 
 ul.main-nav {
@@ -70,9 +86,12 @@ header {
 }
 .NavHeader {
   text-align: left;
-  /*margin-right: 300px;*/
 }
-
+.projectPage {
+    /*margin-top: -20px;*/
+    /*border-top: 2px solid white;*/
+    background: linear-gradient(#778899 ,#d3d3d3);
+}
 .projectPhoto {
   max-width: 500px;
   max-height: 500px;
@@ -81,54 +100,34 @@ header {
   float: left;
   margin-left: 35px;
 }
-.photoWithTitle {
-  width: 30%;
-  float: left;
-}
-
 .projectTitle {
   display: inline-block;
   float: left;
-  width: 35%;
-  /*height: 300px;*/
-  /*position: absolute;*/
-}
-.projectTitle h2 {
-  /*width: 30%;*/
-  /*display: inline-block;*/
-  /*text-align: center;*/
-}
-.projectDescription {
-  width: 65%;
-  float: right;
-  display: inline-block;
-  /*margin-left: 500px;*/
+  width: 575px;
 }
 .photoWithTitle {
   width: 40%;
 
 }
-.photoWithTitle h2 {
-
-}
 .projectOverview {
   display: block;
-  width: 95%;
-  /*position: relative;*/
-  /*height: 600px;*/
+  height: 700px;
+  border-bottom: 2px solid #778899;
+  /*border-top: 2px solid #778899;*/
+  background: white;
+  margin-bottom: 10px;
 }
 .projectDescription {
   text-align: left;
+  padding-left: 25px;
   padding-right: 25px;
-  width: 50%;
-  /*margin-left: 700px;*/
-  /*width: 65%;*/
+  margin-top: 75px;
+  width: 900px;
+  position: absolute;
+  left: 600px;
 }
 .projectDescription h4 {
   font-weight: 800;
-
-  width: 65%;
-  /*margin-bottom: -10px;*/
 }
 
 .EatReviewOverview {
@@ -230,10 +229,11 @@ figcaption {
   margin-left: 10px;
 }
 .frontEnd {
-  width: 700px;
+  width: 800px;
   position: relative;
+  display: inline-block;
   height: auto;
-
+  margin-bottom: 5px;
 }
 .techTitles {
   margin-left: 10px;
@@ -242,7 +242,8 @@ figcaption {
   display: inline-block;
 }
 .techDetails {
-  width: 400px;
+  width: 600px;
+  float: right;
   display: inline-block;
 }
 .techDetails p {
@@ -251,26 +252,45 @@ figcaption {
 .coinSlides {
   position: relative;
   display: inline;
+  margin: 10px;
 }
 
+/*CoinSlides*/
+.coinSlideContainer {
+  height: 80px;
+  width: 550px;
+  background: white;
+  padding-top: 10px;
+  border-radius: 15px;
+  border-bottom: 1px solid #E8E8E8;
+  border-right: 1px solid #E8E8E8;
+  border-left: 1px solid #E8E8E8;
+  margin-left: -1px;
+}
 .coinSlides img {
   float: left;
-  margin: 5px;
-  height: 80px;
-  width: 50px;
+  height: 60px;
+  width: 35px;
+}
+.coinActiveSlide button {
+  border: 2px solid black;
 }
 .coinActiveSlide {
   display: inline;
-  margin: 5px;
+  margin: 10px;
 }
 .coinPhotoContainer {
   width: 550px;
+  height: 575px;
   border: 1px solid #E8E8E8;
   background: #F8F8F8;
 }
 .coinBlurb {
   height:45px;
   font-weight: 900;
+}
+.coinBlurb p {
+  font-size: 14px;
 }
 .coinPhotoContainer {
   margin-left: 20px;
@@ -279,20 +299,32 @@ figcaption {
 .coinMainPhoto img {
   border: 1px solid white;
 }
+
+/*Eat Slides*/
 .eatSlides {
   position: relative;
   display: inline;
-
-
+  margin: 10px;
 }
-
 .eatSlides img {
   float: left;
   margin: 5px;
-  height: 80px;
-  width: 50px;
-  /*margin-bottom: 20px;*/
-
+  height: 50px;
+  width: 43px;
+}
+.eatActiveSlide button {
+  border: 2px solid black;
+}
+.eatSlideContainer {
+  height: 100px;
+  width: 550px;
+  background: white;
+  padding-top: 10px;
+  border-radius: 15px;
+  border-bottom: 1px solid #E8E8E8;
+  border-right: 1px solid #E8E8E8;
+  border-left: 1px solid #E8E8E8;
+  margin-left: -1px;
 }
 .eatActiveSlide {
   display: inline;
@@ -304,12 +336,16 @@ figcaption {
 }
 .eatPhotoContainer {
   width: 550px;
-  height: 500px;
+  height: 440px;
   background: #F8F8F8;
+  margin-left: 25px;
 }
 .eatBlurb {
   height:45px;
   font-weight: 900;
+}
+.eatBlurb p {
+  font-size: 14px;
 }
 .eatPhotoContainer {
   border: 1px solid #E8E8E8;
@@ -317,4 +353,59 @@ figcaption {
 }
 .eatMainPhoto img {
   height: 300px;
+}
+
+/*Insta Slides*/
+.instaSlides {
+  position: relative;
+  display: inline;
+  margin: 10px;
+}
+.instaSlides img {
+  float: left;
+  margin: 5px;
+  height: 50px;
+  width: 43px;
+}
+.instaActiveSlide button {
+  border: 2px solid black;
+}
+.instaSlideContainer {
+  height: 100px;
+  width: 550px;
+  background: white;
+  padding-top: 10px;
+  border-radius: 15px;
+  border-bottom: 1px solid #E8E8E8;
+  border-right: 1px solid #E8E8E8;
+  border-left: 1px solid #E8E8E8;
+  margin-left: -1px;
+}
+.instaActiveSlide {
+  display: inline;
+  margin: 5px;
+}
+.instaMainPhoto img {
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.instaPhotoContainer {
+  width: 550px;
+  height: 440px;
+  background: #F8F8F8;
+  margin-left: 25px;
+}
+.instaBlurb {
+  height:45px;
+  font-weight: 900;
+}
+.instaBlurb p {
+  font-size: 14px;
+}
+.instaPhotoContainer {
+  border: 1px solid #E8E8E8;
+  border-radius: 15px;
+}
+.instaMainPhoto img {
+  height: 325px;
 }

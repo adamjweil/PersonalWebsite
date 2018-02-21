@@ -47,17 +47,20 @@ class EatAndReviewPhotos extends React.Component {
             <p>{this.state.mainPhotoBlurb}</p>
           </div>
         </div>
-        <div className="eatSlides">
-          {
-            slides.map((slide, index) => (
-              <div className={ (index == this.state.activeIndex) ? 'eatActiveSlide': 'eatSlides'}>
-                <button><img src={ slide.imageUrl }
+        <div className="eatSlideContainer">
+          <div className="eatSlides">
+            {
+              slides.map((slide, index) => (
+                <div className={ (index == this.state.activeIndex) ? 'eatActiveSlide': 'eatSlides'}>
+                  <button><img src={ slide.imageUrl }
                     onClick={ (event)=> this.jumpToSlide(index) } />
-                  </button>
+                </button>
 
               </div>
             ))
           }
+        </div>
+          
         </div>
       </div>
     )
