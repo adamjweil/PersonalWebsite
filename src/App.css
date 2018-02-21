@@ -409,3 +409,43 @@ figcaption {
 .instaMainPhoto img {
   height: 325px;
 }
+
+/*Contact Form*/
+.contactForm {
+  width: 500px;
+  height: 700px;
+  background: grey;
+  text-align: left;
+}
+.nameInput {
+  text-align: left;
+}
+.nameInput label {
+  width: 100px;
+}
+.emailInput {
+  text-align: left;
+}
+.emailInput label {
+  width: 100px;
+}
+.inputLabel label {
+  width: 100px;
+}
+.noteInput {
+  text-align: left;
+}
+.noteInput label {
+  width: 100px;
+}
+.noteInput text {
+  width: 400px;
+}
+input[type=text] {
+  width: 375px;
+  height: 300px;
+}
+input[type=textarea] {
+  width: 375px;
+  
+}
