@@ -87,22 +87,25 @@ header {
 }
 
 .projectTitle {
-  display: inline;
+  display: inline-block;
+  float: left;
+  width: 35%;
+  /*height: 300px;*/
   /*position: absolute;*/
 }
 .projectTitle h2 {
   /*width: 30%;*/
-  display: inline-block;
-  text-align: center;
-  text-decoration:
+  /*display: inline-block;*/
+  /*text-align: center;*/
 }
 .projectDescription {
   width: 65%;
   float: right;
+  display: inline-block;
   /*margin-left: 500px;*/
 }
 .photoWithTitle {
-  width: 30%;
+  width: 40%;
 
 }
 .photoWithTitle h2 {
@@ -110,15 +113,21 @@ header {
 }
 .projectOverview {
   display: block;
+  width: 95%;
   /*position: relative;*/
-  height: 600px;
+  /*height: 600px;*/
 }
 .projectDescription {
   text-align: left;
   padding-right: 25px;
+  width: 50%;
+  /*margin-left: 700px;*/
+  /*width: 65%;*/
 }
 .projectDescription h4 {
   font-weight: 800;
+
+  width: 65%;
   /*margin-bottom: -10px;*/
 }
 
@@ -208,4 +217,104 @@ figcaption {
 }
 .slideshow-dots li.active a {
   opacity: 1;
+}
+
+/*Tech Stack*/
+.techStack h3 {
+  font-size: 25px;
+}
+.techStack h4 {
+  font-size: 15px;
+}
+.techStack p {
+  margin-left: 10px;
+}
+.frontEnd {
+  width: 700px;
+  position: relative;
+  height: auto;
+
+}
+.techTitles {
+  margin-left: 10px;
+  width: auto;
+  float: left;
+  display: inline-block;
+}
+.techDetails {
+  width: 400px;
+  display: inline-block;
+}
+.techDetails p {
+  margin-top: 10px;
+}
+.coinSlides {
+  position: relative;
+  display: inline;
+}
+
+.coinSlides img {
+  float: left;
+  margin: 5px;
+  height: 80px;
+  width: 50px;
+}
+.coinActiveSlide {
+  display: inline;
+  margin: 5px;
+}
+.coinPhotoContainer {
+  width: 550px;
+  border: 1px solid #E8E8E8;
+  background: #F8F8F8;
+}
+.coinBlurb {
+  height:45px;
+  font-weight: 900;
+}
+.coinPhotoContainer {
+  margin-left: 20px;
+  border-radius: 15px;
+}
+.coinMainPhoto img {
+  border: 1px solid white;
+}
+.eatSlides {
+  position: relative;
+  display: inline;
+
+
+}
+
+.eatSlides img {
+  float: left;
+  margin: 5px;
+  height: 80px;
+  width: 50px;
+  /*margin-bottom: 20px;*/
+
+}
+.eatActiveSlide {
+  display: inline;
+  margin: 5px;
+}
+.eatMainPhoto img {
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.eatPhotoContainer {
+  width: 550px;
+  height: 500px;
+  background: #F8F8F8;
+}
+.eatBlurb {
+  height:45px;
+  font-weight: 900;
+}
+.eatPhotoContainer {
+  border: 1px solid #E8E8E8;
+  border-radius: 15px;
+}
+.eatMainPhoto img {
+  height: 300px;
 }
