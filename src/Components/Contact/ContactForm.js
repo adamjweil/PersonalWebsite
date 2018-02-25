@@ -47,27 +47,30 @@ class ContactForm extends Component {
     const lastNameLength = this.state.lastName.length;
     const totalLength = firstNameLength + lastNameLength;
      if (firstNameLength > 0 && lastNameLength > 0) return 'success';
-    else if (lastNameLength > 0) return 'warning';
-    else if (firstNameLength > 0) return 'warning';
-      else return 'error';
+     else if (firstNameLength > 0) return 'warning';
+     else if (lastNameLength > 0) return 'warning';
+     else return null;
+    // else if (lastNameLength > 0) return 'warning';
+    // else if (firstNameLength > 0) return 'warning';
+    //   else return 'error';
    }
   getEmailValidationState() {
     const emailLength = this.state.email.length;
     const phoneLength = this.state.phone.length;
     if (emailLength > 0 || phoneLength > 0) return 'success';
 
-      else return 'error';
+      else return null;
   }
   getSubjectValidationState() {
     const subject = this.state.selectedOption;
 
     if (subject != 'Pls select an option from the list below') return 'success';
-      else return 'error';
+      else return null;
   }
   getNoteValidationState() {
     const note = this.state.note.length;
     if (note > 0) return 'success';
-      else return 'error';
+      else return null;
   }
   sendEmail() {
     alert("Thanks `$this.state.firstName`, your email has been sent!");
@@ -82,6 +85,9 @@ class ContactForm extends Component {
       <section className="contactForm">
         <div className="form-group">
           <form onSubmit={this.sendEmail}>
+            <div className="formTitle">
+              <h2>Contact Form</h2>
+            </div>
             <FormGroup
                 controlId="formBasicText"
                 validationState={this.getNameValidationState()}
@@ -100,7 +106,7 @@ class ContactForm extends Component {
                     onChange={this.handleLastNameChange}
                   />
                 <FormControl.Feedback />
-                <HelpBlock>Validation is based on string length.</HelpBlock>
+                <HelpBlock>(Pls enter both first and last name)</HelpBlock>
              </FormGroup>
 
              <FormGroup
@@ -120,7 +126,7 @@ class ContactForm extends Component {
                  onChange={this.handlePhoneChange}
                  />
                <FormControl.Feedback />
-               <HelpBlock>(Need to enter either an email or phone number where I can respond to.)</HelpBlock>
+               <HelpBlock>(Pls enter either an email or phone number where I can respond to.)</HelpBlock>
              </FormGroup>
 
              <FormGroup
@@ -158,7 +164,7 @@ class ContactForm extends Component {
                  />
                <FormControl.Feedback />
              </FormGroup>
-            <Button type="submit">Submit</Button>
+            <Button bsStyle="success" className="formButton" type="submit" style={{fontSize:'2rem'}}>Submit</Button>
 
         </form>
       </div>
