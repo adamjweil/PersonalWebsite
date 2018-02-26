@@ -101,6 +101,9 @@ const Projects = (props) => (
             <div className="techDetails">
               <p>This web app application is built entirely in React JS. You will notice that when images are uploaded they are displayed in the timeline immediately, without the page having to reload. The same is true when you navigate between pages, the page renders without ever needing to reload. I built this website to refine my React skills by creating a complete application where all data is stored in State, rather then a database. Since everything is managed in State, there is no need for a Back End.</p>
             </div>
+            <div className="techDetails">
+              
+            </div>
           </div>
           <div className="projectLinks">
             <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://github.com/adamjweil/React-InstaClone" target="_blank">GitHub</a></h4>

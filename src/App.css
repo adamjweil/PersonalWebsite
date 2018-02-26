@@ -141,6 +141,7 @@ header {
     text-align: left;
   }
 }
+
 .projectPage {
     /*margin-top: -20px;*/
     /*border-top: 2px solid white;*/
@@ -201,7 +202,7 @@ header {
 @media (max-width: 600px) {
   .projectOverview {
     display: block;
-    height: 700px;
+    height: 2000px;
     border-bottom: 2px solid #778899;
     background: white;
     margin-bottom: 10px;
@@ -213,14 +214,49 @@ header {
     width: 95%;
   }
   .projectDescription {
-    display: block;
+    display: inline-block;
     text-align: left;
     padding-left: 25px;
     padding-right: 25px;
-    margin-top: 75px;
+    margin-top: 25px;
     width: 90%;
-    /*position: absolute;*/
-    /*left: 600px;*/
+    left: 2%;
+    position: relative;
+    text-align: center;
+  }
+  .techTitles {
+    margin-left: 0px;
+    width: 90%;
+    text-align: center;
+    display: block;
+  }
+  .techDetails {
+    width: 300px;
+    height: 250px;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+  }
+  .frontEnd {
+    width: 300px;
+    position: absolute;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .techDetails p {
+    position: absolute;
+    left: -200px;
+    display: block;
+    width: 300px;
+    height:100%;
+    margin-top: 20px;
+  }
+  .projectLinks {
+    display: block;
+    position: relative;
+  }
+  .techStack {
+    margin-top: 20px;
   }
 }
 
@@ -596,10 +632,8 @@ figcaption {
   width: 900px;
   height: 800px;
   border: 2px solid grey;
-  /*background: #D3D3D3;*/
   background: #DCDCDC;
   text-align: left;
-  /*border-radius: 10px;*/
 }
 input[type=text] {
   width: 90%;
@@ -667,6 +701,85 @@ label {
   font-size: 22px;
   font-weight: 700;
   text-align: center;
+}
+@media (max-width: 600px) {
+  .contactForm {
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 10px;
+    width: 95%;
+    /*height: 800px;*/
+    border: 2px solid grey;
+    background: #DCDCDC;
+    text-align: left;
+  }
+  input[type=text] {
+    width: 90%;
+    margin-left: 5%;
+    height: 300px;
+    font-size: 20px;
+  }
+  input[type=textarea] {
+    width: 40%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  input[type=email] {
+    width: 40%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  input[type=number] {
+    width: 40%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  select.form-control {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 20px;
+  }
+  ControlLabel {
+    display: block;
+    vertical-align: middle;
+  }
+  .Select {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 20px;
+  }
+  label {
+    width: 800px;
+    vertical-align: middle;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    line-height: 1.42857143;
+  }
+  .help-block {
+    text-align: center;
+    font-size: 12px;
+  }
+  .formButton {
+    height: 50px;
+    width: 250px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+  }
+  .formTitle h2 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+  }
 }
 
 /*Home Page*/
@@ -754,4 +867,24 @@ label {
   margin-left: 100px;
   margin-top: 10px;
   width: 900px;
+}
+@media (max-width: 600px) {
+  .resume img {
+    height: 1200px;
+    /*width: 300px;*/
+    /*width: 775px;*/
+    border: 2px solid #aaa;
+  }
+  .resume {
+    height: 1050px;
+    width: 800px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+  }
+  .printButton {
+    /*margin-left: 100px;*/
+    margin-top: 10px;
+    width: 200px;
+  }
 }
