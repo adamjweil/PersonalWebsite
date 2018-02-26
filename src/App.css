@@ -514,7 +514,7 @@ label {
 }
 .homePhoto img {
   height: 350px;
-  /*border-radius: 5px;*/
+  border-radius: 5px;
   border: 1px solid grey;
 }
 .outsideLinks {

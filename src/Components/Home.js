@@ -10,7 +10,7 @@ const Home = (props) => (
     </div>
     <div className="homeContainer">
       <div className="homePhoto">
-        <img src="https://user-images.githubusercontent.com/25589910/36647259-b65636ea-1a50-11e8-91b4-6320e7852e4a.png"></img>
+        <img src="https://user-images.githubusercontent.com/25589910/36649262-c4f14e38-1a69-11e8-8722-002b648ea184.jpg"></img>
         <div className="outsideLinks">
           <h3><i className="glyphicon glyphicon-chevron-right"></i><a href="https://www.linkedin.com/in/adamjweil/" target="_blank"> LinkedIn</a></h3>
           <h3><i className="glyphicon glyphicon-chevron-right"></i><a href="https://github.com/adamjweil" target="_blank"> GitHub</a></h3>
