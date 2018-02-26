@@ -525,3 +525,23 @@ label {
 .contactContainer {
   margin-top: 50px;
 }
+
+
+/*Resume Page*/
+.resume img {
+  height: 1200px;
+  /*width: 775px;*/
+  border: 2px solid #aaa;
+}
+.resume {
+  height: 1050px;
+  width: 800px;
+  margin-left: 100px;
+  margin-bottom: 200px;
+  padding: 10px;
+}
+.printButton {
+  margin-left: 100px;
+  margin-top: 10px;
+  width: 900px;
+}
