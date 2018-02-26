@@ -506,19 +506,32 @@ label {
   margin-left: 5%;
   margin-top: 20px;
   width: 90%;
+  margin: auto;
 }
 .homePhoto {
   display: inline-block;
   position: absolute;
   left: 50px;
+  float: left;
+  width: 25%;
+  margin-top: 5%;
 }
 .homePhoto img {
-  height: 350px;
+  max-height: 350px;
+  width: 90%;
   border-radius: 5px;
   border: 1px solid grey;
+
 }
 .outsideLinks {
   margin-top: 20px;
+}
+.homeBio {
+  float: left;
+  margin-left: 30%;
+  margin-top: 7%;
+  width: 60%;
+  text-align: left;
 }
 
 /*Contact Page*/
