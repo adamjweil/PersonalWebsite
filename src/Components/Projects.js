@@ -40,9 +40,23 @@ const Projects = (props) => (
               <p>This application is supported with a Ruby On Rails back-end. With most of the time intensive aspects of the development being consumed in our fron-end, we needed a back-end that would allow for rapid development and scalability.</p>
             </div>
           </div>
+
+          <div className="frontEnd">
+            <div className="techTitles">
+              <h4>FRAMEWORKS  <i className="glyphicon glyphicon-chevron-right"></i></h4>
+            </div>
+            <div className="techDetails">
+              <p>NPM, Webpack, Yarn </p>
+            </div>
+          </div>
+
           <div className="projectLinks">
-            <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://github.com/adamjweil/CoinStash" target="_blank">GitHub</a></h4>
+            <div className="link">
+              <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://github.com/adamjweil/CoinStash" target="_blank">GitHub</a></h4>
+            </div>
+            <div className="link">
             <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://coinstache-backend.herokuapp.com" target="_blank">Heroku</a></h4>
+            </div>
           </div>
         </div>
 
@@ -75,9 +89,23 @@ const Projects = (props) => (
               <p>The Back End of this application is built in Ruby, and the data it stores is managed with a PostgreSQL database.</p>
             </div>
           </div>
+
+          <div className="frontEnd">
+            <div className="techTitles">
+              <h4>DATABASES  <i className="glyphicon glyphicon-chevron-right"></i></h4>
+            </div>
+            <div className="techDetails">
+              <p>PostgresSQL, ActiveRecord</p>
+            </div>
+          </div>
+
           <div className="projectLinks">
-            <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://github.com/adamjweil/AdamsEat-Review" target="_blank">GitHub</a></h4>
-            <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://adams-eatandreview.herokuapp.com/" target="_blank">Heroku</a></h4>
+            <div className="link">
+              <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://github.com/adamjweil/AdamsEat-Review" target="_blank">GitHub</a></h4>
+            </div>
+            <div className="link">
+              <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://adams-eatandreview.herokuapp.com/" target="_blank">Heroku</a></h4>
+            </div>
           </div>
         </div>
       </div>
@@ -102,12 +130,17 @@ const Projects = (props) => (
               <p>This web app application is built entirely in React JS. You will notice that when images are uploaded they are displayed in the timeline immediately, without the page having to reload. The same is true when you navigate between pages, the page renders without ever needing to reload. I built this website to refine my React skills by creating a complete application where all data is stored in State, rather then a database. Since everything is managed in State, there is no need for a Back End.</p>
             </div>
             <div className="techDetails">
-              
+
             </div>
           </div>
           <div className="projectLinks">
-            <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://github.com/adamjweil/React-InstaClone" target="_blank">GitHub</a></h4>
-            <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://react-instaclone.herokuapp.com/" target="_blank">Heroku</a></h4>
+            <div className="link">
+              <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://github.com/adamjweil/React-InstaClone" target="_blank">GitHub</a></h4>
+            </div>
+            <div className="link">
+              <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://react-instaclone.herokuapp.com/" target="_blank">Heroku</a></h4>
+            </div>
+
           </div>
         </div>
       </div>

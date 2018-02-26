@@ -160,6 +160,11 @@ header {
   float: left;
   width: 575px;
 }
+.projectTitle h2 {
+  font-family: Arvo;
+  font-weight: 900;
+  text-decoration: underline;
+}
 .projectOverview {
   display: block;
   height: 700px;
@@ -173,13 +178,67 @@ header {
   padding-left: 25px;
   padding-right: 25px;
   margin-top: 75px;
-  width: 900px;
+  width: 60%;
   position: absolute;
-  left: 600px;
+  left: 575px;
+}
+.projectDescription h3 {
+  font-family: Arvo;
+  font-size: 25px;
+  font-weight: 650;
+  color: grey;
 }
 .projectDescription h4 {
   font-weight: 800;
+  /*color: grey;*/
 }
+.projectDescription p {
+  margin-left: 10px;
+}
+.projectTitle h2 {
+  font-family: Arvo;
+  font-style: bold;
+  font-size: 40px;
+}
+.techStack {
+  margin-top: 20px;
+}
+.techStack h3 {
+  font-size: 25px;
+}
+.techStack h4 {
+  font-size: 15px;
+}
+.techStack p {
+  /*margin-left: 10px;*/
+}
+.frontEnd {
+  /*******/
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  height: auto;
+  margin-bottom: 5px;
+}
+.techTitles {
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 150px;
+  float: left;
+  display: inline-block;
+}
+.techTitles h4 {
+  font-family: Arvo;
+}
+.techDetails {
+  width: 80%;
+  float: right;
+  display: inline-block;
+}
+.techDetails p {
+  /*margin-top: 10px;*/
+}
+
 
 .EatReviewOverview {
   width: 95%;
@@ -231,7 +290,7 @@ header {
     display: block;
   }
   .techDetails {
-    width: 300px;
+    width: 100%;
     height: 250px;
     margin-top: 20px;
     position: relative;
@@ -245,7 +304,7 @@ header {
   }
   .techDetails p {
     position: absolute;
-    left: -200px;
+    /*left: -200px;*/
     display: block;
     width: 300px;
     height:100%;
@@ -259,123 +318,34 @@ header {
     margin-top: 20px;
   }
 }
-
-.slideshow {
-  width: 380px;
-  height: 480px;
-  /*background: #000;*/
+.projectLinks {
   display: block;
   position: relative;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  /*margin-left: 20%;*/
 }
-.slideshow-slides {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.slideshow-slides li {
+.link {
+  margin-left: 20%;
+  /*margin-right: 20%;*/
   display: inline-block;
-  /*position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;*/
-  margin: 0;
-  padding: 0;
-  transition: .2s;
-  opacity: 0;
-}
-.slideshow-slides li.active {
-  opacity: 1;
-}
-figure {
-  margin: 0;
-  padding: 0;
-}
-figcaption {
-  position: absolute;
-  bottom: 10;
-  left: 0;
-  right: 0;
-  color: black;
-  padding: 10px;
+  width: 150px;
 }
 
-.slideshow-dots {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  list-style: none;
-}
-.slideshow-dots li {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-.slideshow-dots a {
-  cursor: pointer;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-  background: blue;
-  border-radius: 10px;
-  text-indent: -9990px;
-  opacity: .5;
-  transition: .3s;
-}
-.slideshow-dots li.active a {
-  opacity: 1;
-}
+
 
 /*Tech Stack*/
-.projectDescription h3 {
-  font-size: 25px;
-}
-.techStack h3 {
 
-  font-size: 25px;
-}
-.techStack h4 {
-  font-size: 15px;
-}
-.techStack p {
-  margin-left: 10px;
-}
-.projectTitle h2 {
-  font-family: Arvo;
-  font-style: bold;
-  font-size: 30px;
-}
-.frontEnd {
-  width: 800px;
-  position: relative;
-  display: inline-block;
-  height: auto;
-  margin-bottom: 5px;
-}
-.techTitles {
-  margin-left: 10px;
-  width: auto;
-  float: left;
-  display: inline-block;
-}
-.techDetails {
-  width: 600px;
-  float: right;
-  display: inline-block;
-}
-.techDetails p {
-  margin-top: 10px;
-}
+
+
 
 
 /*CoinSlides*/
 .coinSlideContainer {
   height: 80px;
-  width: 550px;
+  width: 500px;
   background: white;
   padding-top: 10px;
-  border-radius: 15px;
+  /*border-radius: 15px;*/
   border-bottom: 1px solid #E8E8E8;
   border-right: 1px solid #E8E8E8;
   border-left: 1px solid #E8E8E8;
@@ -383,28 +353,34 @@ figcaption {
 }
 .coinSlides img {
   float: left;
-  height: 60px;
-  width: 35px;
+  height: 50px;
+  width: 25px;
+
 }
 .coinSlides {
   position: relative;
   display: inline;
   margin: 10px;
+
+}
+.coinSlides button {
+  border-radius: 5px;
 }
 .coinActiveSlide button {
   border: 2px solid black;
+  border-radius: 5px;
 }
 .coinActiveSlide {
   display: inline;
   margin: 10px;
 }
 .coinPhotoContainer {
-  width: 550px;
+  width: 500px;
   height: 575px;
   border: 1px solid #E8E8E8;
   background: #F8F8F8;
   margin-left: 20px;
-  border-radius: 15px;
+  /*border-radius: 15px;*/
 }
 .coinBlurb {
   height:45px;
@@ -464,15 +440,15 @@ figcaption {
 .eatSlides img {
   float: left;
   margin: 5px;
-  height: 50px;
-  width: 43px;
+  height: 40px;
+  width: 35px;
 }
 .eatActiveSlide button {
   border: 2px solid black;
 }
 .eatSlideContainer {
-  height: 100px;
-  width: 550px;
+  height: 85px;
+  width: 500px;
   background: white;
   padding-top: 10px;
   border-radius: 15px;
@@ -487,11 +463,12 @@ figcaption {
 }
 .eatMainPhoto img {
   border-radius: 10px;
+  max-width: 450px;
   border: 1px solid white;
 }
 .eatPhotoContainer {
-  width: 550px;
-  height: 440px;
+  width: 500px;
+  height: 430px;
   background: #F8F8F8;
   margin-left: 25px;
 }
@@ -563,10 +540,10 @@ figcaption {
 }
 .instaSlideContainer {
   height: 100px;
-  width: 550px;
+  width: 500px;
   background: white;
   padding-top: 10px;
-  border-radius: 15px;
+  /*border-radius: 15px;*/
   border-bottom: 1px solid #E8E8E8;
   border-right: 1px solid #E8E8E8;
   border-left: 1px solid #E8E8E8;
@@ -577,16 +554,18 @@ figcaption {
   margin: 5px;
 }
 .instaMainPhoto img {
+  max-width: 450px;
   border-radius: 10px;
   border: 1px solid white;
 }
 .instaPhotoContainer {
-  width: 550px;
+  width: 500px;
   height: 440px;
   background: #F8F8F8;
   margin-left: 25px;
   border: 1px solid #E8E8E8;
-  border-radius: 15px;
+  margin-top: 20px;
+  /*border-radius: 15px;*/
 }
 .instaBlurb {
   height:45px;
@@ -813,7 +792,7 @@ label {
     margin-left: 30%;
     margin-top: 7%;
     width: 60%;
-    text-align: left;
+    text-align: center;
   }
 }
 @media (max-width: 800px) {
@@ -887,4 +866,73 @@ label {
     margin-top: 10px;
     width: 200px;
   }
+}
+
+
+
+
+
+/*SlideShow CSS - Currently not using*/
+.slideshow {
+  width: 380px;
+  height: 480px;
+  display: block;
+  position: relative;
+  margin-bottom: 100px;
+}
+.slideshow-slides {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.slideshow-slides li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  transition: .2s;
+  opacity: 0;
+}
+.slideshow-slides li.active {
+  opacity: 1;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+figcaption {
+  position: absolute;
+  bottom: 10;
+  left: 0;
+  right: 0;
+  color: black;
+  padding: 10px;
+}
+
+.slideshow-dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  list-style: none;
+}
+.slideshow-dots li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.slideshow-dots a {
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: blue;
+  border-radius: 10px;
+  text-indent: -9990px;
+  opacity: .5;
+  transition: .3s;
+}
+.slideshow-dots li.active a {
+  opacity: 1;
 }
