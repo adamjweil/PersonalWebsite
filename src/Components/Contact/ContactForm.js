@@ -23,6 +23,7 @@ class ContactForm extends Component {
     this.handlePhoneChange = this.handlePhoneChange.bind(this);
     this.handleSubjectChange = this.handleSubjectChange.bind(this);
     this.handleNoteChange = this.handleNoteChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleFirstNameChange = e =>
     this.setState({ firstName: e.target.value });
@@ -75,8 +76,26 @@ class ContactForm extends Component {
   sendEmail() {
     alert("Thanks `$this.state.firstName`, your email has been sent!");
   }
+  handleSubmit(event) {
+    event.preventDefault();
+    const data = new FormData(event.target);
+    fetch('https://formspree.io/adamjweil@gmail.com', {
+      method: 'POST',
+      body: data,
+    });
+    alert('Thank you, your message has been sent!');
+    this.setState({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: '',
+      selectedOption: 'Pls select an option from the list below',
+      note: ""
+    });
+  }
 
   render() {
+
     const { selectedOption } = this.state.selectedOption;
     const value = selectedOption && selectedOption.value;
     const now = Date.now();
@@ -84,7 +103,7 @@ class ContactForm extends Component {
     return (
       <section className="contactForm">
         <div className="form-group">
-          <form onSubmit={this.sendEmail}>
+          <form onSubmit={this.handleSubmit}>
             <div className="formTitle">
               <h2>Contact Form</h2>
             </div>
@@ -94,12 +113,14 @@ class ContactForm extends Component {
                 >
                 <ControlLabel>Full Name:</ControlLabel>
                 <FormControl
+                  name="firstName"
                   type="textarea"
                   value={this.state.firstName}
                   placeholder="First Name"
                   onChange={this.handleFirstNameChange}
                  />
                  <FormControl
+                    name="lastName"
                     type="textarea"
                     value={this.state.lastName}
                     placeholder="Last Name"
@@ -114,12 +135,14 @@ class ContactForm extends Component {
                validationState={this.getEmailValidationState()} >
                <ControlLabel>Contact Information:</ControlLabel>
                <FormControl
+                 name="_replyto"
                  type="email"
                  value={this.state.email}
                  placeholder="Enter Email"
                  onChange={this.handleEmailChange}
                  />
                <FormControl
+                 name="number"
                  type="number"
                  value={this.state.phone}
                  placeholder="Enter Phone #"
@@ -134,7 +157,7 @@ class ContactForm extends Component {
                 validationState={this.getSubjectValidationState()} >
                <ControlLabel>Topic:</ControlLabel>
                <Select
-                 name="form-field-name"
+                 name="topic"
                  value={selectedOption}
                  placeholder={this.state.selectedOption}
                  removeSelected={false}
@@ -151,12 +174,19 @@ class ContactForm extends Component {
 
                <FormControl.Feedback />
              </FormGroup>
-
+             <FormGroup>
+               <FormControl
+                 name="subject"
+                 type="hidden"
+                  value={this.state.selectedOption}
+                />
+             </FormGroup>
              <FormGroup
                controlId="formBasicText"
                validationState={this.getNoteValidationState()} >
                <ControlLabel>Enter Note:</ControlLabel>
                 <FormControl
+                  name="note"
                   type="text"
                    value={this.state.note}
                    placeholder="Enter Note"

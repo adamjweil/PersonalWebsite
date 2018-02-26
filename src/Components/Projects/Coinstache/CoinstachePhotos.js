@@ -14,7 +14,7 @@ const slides = [{
   caption: "Bitcoin Page (Bottom): Real-time RSS feeds relating to Bitcoin"
 }, {
   imageUrl: "https://user-images.githubusercontent.com/25589910/36453456-0c20480c-1666-11e8-83d8-8369104cfd98.png",
-  caption: "Wallets Page: Shows current balances in USD, BTC, ETH, and LTC wallets, as well as the most recent 25 transactions and the associated details"
+  caption: "Wallets Page: Shows current balance in USD, BTC, ETH, and LTC wallets, as well as most recent 25 transactions and the associated details"
 }, {
   imageUrl: "https://user-images.githubusercontent.com/25589910/36453510-448bd7ce-1666-11e8-8e64-633fab9bfda5.png",
   caption: "Buying/Selling"
@@ -50,7 +50,7 @@ class CoinstachePhotos extends React.Component {
           </div>
         </div>
         <div className="coinSlideContainer">
-          <div className="coinSlides">
+          // <div className="coinSlides">
             {
               slides.map((slide, index) => (
                 <div className={ (index == this.state.activeIndex) ? 'coinActiveSlide': 'coinSlides'}>
@@ -61,7 +61,7 @@ class CoinstachePhotos extends React.Component {
               </div>
             ))
           }
-        </div>
+        // </div>
         </div>
       </div>
     )
