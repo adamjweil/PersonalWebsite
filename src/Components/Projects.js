@@ -12,8 +12,10 @@ import EatAndReviewSlideshow from './Projects/EatAndReview/EatAndReviewSlideshow
 const Projects = (props) => (
   <div className="projectPage">
     <div className="projectOverview">
-        <div className="projectTitle">
+        <div className="projectName">
           <h2>Coin'Stache</h2>
+        </div>
+        <div className="projectTitle">
           <CoinstachePhotos />
         </div>
 
@@ -63,8 +65,10 @@ const Projects = (props) => (
       </div>
     </div>
     <div className="projectOverview">
-      <div className="projectTitle">
+      <div className="projectName">
         <h2>Eat  Review</h2>
+      </div>
+      <div className="projectTitle">
         <EatAndReviewPhotos />
       </div>
       <div className="projectDescription">
@@ -111,10 +115,12 @@ const Projects = (props) => (
       </div>
     </div>
     <div className="projectOverview">
-        <div className="projectTitle">
-          <h2>React-InstaClone</h2>
-          <InstaClonePhotos />
-        </div>
+      <div className="projectName">
+        <h2>React-InstaClone</h2>
+      </div>
+      <div className="projectTitle">
+        <InstaClonePhotos />
+      </div>
 
       <div className="projectDescription">
         <h3>DESCRIPTION</h3>
