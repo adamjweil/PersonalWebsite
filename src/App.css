@@ -229,6 +229,9 @@ header {
   float: left;
   display: inline-block;
 }
+.techTitlesLong h4 {
+  font-family: Futura;
+}
 .techTitles h4 {
   font-family: Futura;
 }
