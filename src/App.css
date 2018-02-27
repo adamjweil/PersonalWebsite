@@ -167,7 +167,10 @@ header {
 }
 .projectOverview {
   display: block;
-  height: 700px;
+  /*position: absolute;*/
+  height: auto;
+  min-height: 700px;
+  /*max-height: 800px;*/
   border-bottom: 2px solid #778899;
   background: white;
   margin-bottom: 10px;
@@ -175,10 +178,11 @@ header {
 }
 .projectDescription {
   text-align: left;
-  padding-left: 25px;
+  padding-left: 5px;
   padding-right: 25px;
   margin-top: 75px;
-  width: 60%;
+  /*width: 60%;*/
+  min-width: 780px;
   position: absolute;
   left: 575px;
 }
@@ -223,7 +227,14 @@ header {
 .techTitles {
   margin-left: 10px;
   margin-top: 5px;
-  width: 150px;
+  width: 120px;
+  float: left;
+  display: inline-block;
+}
+.techTitlesLong {
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 140px;
   float: left;
   display: inline-block;
 }
@@ -261,7 +272,7 @@ header {
 @media (max-width: 600px) {
   .projectOverview {
     display: block;
-    height: 2000px;
+    height: 1800px;
     border-bottom: 2px solid #778899;
     background: white;
     margin-bottom: 10px;
@@ -269,36 +280,39 @@ header {
   }
   .projectTitle {
     display: block;
-
     width: 95%;
   }
   .projectDescription {
     display: inline-block;
-    text-align: left;
-    padding-left: 25px;
-    padding-right: 25px;
+    /*text-align: left;*/
+    padding-left: 15px;
+    /*padding-right: 25px;*/
     margin-top: 25px;
-    width: 90%;
+    /*width: 200px;*/
     left: 2%;
     position: relative;
-    text-align: center;
+    text-align: left;
+  }
+  .projectDescription p {
+    width: 80%;
   }
   .techTitles {
     margin-left: 0px;
     width: 90%;
-    text-align: center;
+    text-align: left;
+    height: 10px;
     display: block;
   }
   .techDetails {
     width: 100%;
-    height: 250px;
-    margin-top: 20px;
+    min-height: 200px;
+    margin-top: 10px;
     position: relative;
     display: inline-block;
   }
   .frontEnd {
-    width: 300px;
-    position: absolute;
+    width: 100%;
+    position: relative;
     display: block;
     margin-bottom: 5px;
   }
@@ -306,17 +320,26 @@ header {
     position: absolute;
     /*left: -200px;*/
     display: block;
-    width: 300px;
+    width: 100%;
     height:100%;
     margin-top: 20px;
   }
   .projectLinks {
     display: block;
-    position: relative;
+    height: 50px;
+    width: 300px;
+    margin-top: 20px;
+  }
+  .link {
+    margin-left: 0%;
+    display: block;
+    width: 50px;
+
   }
   .techStack {
     margin-top: 20px;
   }
+
 }
 .projectLinks {
   display: block;
@@ -346,10 +369,11 @@ header {
   background: white;
   padding-top: 10px;
   /*border-radius: 15px;*/
-  border-bottom: 1px solid #E8E8E8;
-  border-right: 1px solid #E8E8E8;
-  border-left: 1px solid #E8E8E8;
-  margin-left: -1px;
+  border-bottom: 2px solid #A9A9A9;
+  border-right: 2px solid #A9A9A9;
+  border-left: 2px solid #A9A9A9;
+  /*border: 1px solid #A9A9A9;*/
+  margin-left: -2px;
 }
 .coinSlides img {
   float: left;
@@ -377,7 +401,8 @@ header {
 .coinPhotoContainer {
   width: 500px;
   height: 575px;
-  border: 1px solid #E8E8E8;
+  /*border: 1px solid #E8E8E8;*/
+  border: 2px solid #A9A9A9;
   background: #F8F8F8;
   margin-left: 20px;
   /*border-radius: 15px;*/
@@ -396,7 +421,7 @@ header {
   .coinPhotoContainer {
     width: 97%;
     height: 570px;
-    border: 1px solid #E8E8E8;
+    border: 1px solid #A9A9A9;
     background: #F8F8F8;
     margin-left: 20px;
     border-radius: 15px;
@@ -413,14 +438,17 @@ header {
     margin: 5px;
   }
   .coinSlideContainer {
-    height: 70px;
-    width: 346px;
+    height: 68px;
+    /*width: 346px;*/
+    width: 98%;
     background: white;
     padding-top: 10px;
     border-radius: 15px;
-    border-bottom: 1px solid #E8E8E8;
-    border-right: 1px solid #E8E8E8;
-    border-left: 1px solid #E8E8E8;
+    border-bottom: 0px solid white;
+    border-right: 0px solid white;
+    border-left: 0px solid white;
+    margin-left: 1px;
+
   }
   .coinBlurb {
     height:45px;
@@ -440,8 +468,8 @@ header {
 .eatSlides img {
   float: left;
   margin: 5px;
-  height: 40px;
-  width: 35px;
+  height: 35px;
+  width: 30px;
 }
 .eatActiveSlide button {
   border: 2px solid black;
@@ -451,15 +479,22 @@ header {
   width: 500px;
   background: white;
   padding-top: 10px;
-  border-radius: 15px;
-  border-bottom: 1px solid #E8E8E8;
-  border-right: 1px solid #E8E8E8;
-  border-left: 1px solid #E8E8E8;
+  /*border-radius: 15px;*/
+  border-bottom: 2px solid #A9A9A9;
+  border-right: 2px solid #A9A9A9;
+  border-left: 2px solid #A9A9A9;
   margin-left: -1px;
 }
 .eatActiveSlide {
   display: inline;
   margin: 5px;
+  /*border-radius: 15px;*/
+}
+.eatActiveSlide button {
+  border-radius: 5px;
+}
+.eatSlides button {
+  border-radius: 5px;
 }
 .eatMainPhoto img {
   border-radius: 10px;
@@ -480,8 +515,8 @@ header {
   font-size: 14px;
 }
 .eatPhotoContainer {
-  border: 1px solid #E8E8E8;
-  border-radius: 15px;
+  border: 2px solid #A9A9A9;
+  /*border-radius: 15px;*/
 }
 .eatMainPhoto img {
   height: 300px;
@@ -489,7 +524,7 @@ header {
 @media (max-width: 600px) {
   .eatPhotoContainer {
     width: 95%;
-    height: 500px;
+    height: 450px;
     background: #F8F8F8;
     margin-left: 20px;
   }
@@ -502,8 +537,8 @@ header {
     float: left;
     display: inline-block;
     margin: 5px;
-    height: 50px;
-    width: 35px;
+    height: 30px;
+    width: 20px;
   }
   .eatMainPhoto img {
     width: 90%;
@@ -511,15 +546,15 @@ header {
     border: 1px solid white;
   }
   .eatSlideContainer {
-    height: 155px;
-    width: 338px;
+    height: 100px;
+    width: 99%;
     background: white;
     padding-top: 10px;
     border-radius: 15px;
-    border-bottom: 1px solid #E8E8E8;
-    border-right: 1px solid #E8E8E8;
-    border-left: 1px solid #E8E8E8;
-    margin-left: -1px;
+    border-bottom: 0px solid white;
+    border-right: 0px solid white;
+    border-left: 0px solid white;
+    margin-left: 0px;
   }
 }
 
@@ -544,9 +579,9 @@ header {
   background: white;
   padding-top: 10px;
   /*border-radius: 15px;*/
-  border-bottom: 1px solid #E8E8E8;
-  border-right: 1px solid #E8E8E8;
-  border-left: 1px solid #E8E8E8;
+  border-bottom: 2px solid #A9A9A9;
+  border-right: 2px solid #A9A9A9;
+  border-left: 2px solid #A9A9A9;
   margin-left: -1px;
 }
 .instaActiveSlide {
@@ -563,7 +598,7 @@ header {
   height: 440px;
   background: #F8F8F8;
   margin-left: 25px;
-  border: 1px solid #E8E8E8;
+  border: 2px solid #A9A9A9;
   margin-top: 20px;
   /*border-radius: 15px;*/
 }
@@ -585,22 +620,23 @@ header {
   }
   .instaPhotoContainer {
     width: 95%;
-    /*height: 440px;*/
+    height: 470px;
     background: #F8F8F8;
     margin-left: 5%;
-    border: 1px solid #E8E8E8;
+    border: 1px solid #A9A9A9;
     border-radius: 15px;
   }
   .instaSlideContainer {
-    height: 100px;
-    width: 338px;
+    height: 95px;
+    width: 99%;
     margin-right: 5px;
     background: white;
     padding-top: 10px;
     border-radius: 15px;
-    border-bottom: 1px solid #E8E8E8;
-    border-right: 1px solid #E8E8E8;
-    border-left: 1px solid #E8E8E8;
+    border-bottom: 0px solid white;
+    border-right: 0px solid white;
+    border-left: 0px solid white;
+    margin-left: 1px;
   }
 }
 

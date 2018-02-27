@@ -50,7 +50,7 @@ class CoinstachePhotos extends React.Component {
           </div>
         </div>
         <div className="coinSlideContainer">
-          // <div className="coinSlides">
+          <div className="coinSlides">
             {
               slides.map((slide, index) => (
                 <div className={ (index == this.state.activeIndex) ? 'coinActiveSlide': 'coinSlides'}>
@@ -61,7 +61,7 @@ class CoinstachePhotos extends React.Component {
               </div>
             ))
           }
-        // </div>
+        </div>
         </div>
       </div>
     )
