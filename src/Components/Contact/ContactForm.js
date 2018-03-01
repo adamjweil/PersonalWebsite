@@ -37,7 +37,6 @@ class ContactForm extends Component {
   handleSubjectChange = (selectedOption) => {
     this.setState({ selectedOption: selectedOption.label });
     console.log(`Selected: ${selectedOption.label}`);
-
   }
   handleNoteChange = e =>
     this.setState({ note: e.target.value });
@@ -52,22 +51,17 @@ class ContactForm extends Component {
      else if (firstNameLength > 0) return 'warning';
      else if (lastNameLength > 0) return 'warning';
      else return null;
-    // else if (lastNameLength > 0) return 'warning';
-    // else if (firstNameLength > 0) return 'warning';
-    //   else return 'error';
    }
   getEmailValidationState() {
     const emailLength = this.state.email.length;
     const phoneLength = this.state.phone.length;
     if (emailLength > 0 || phoneLength > 0) return 'success';
-
       else return null;
   }
   getSubjectValidationState() {
     const subject = this.state.selectedOption;
-
-    if (subject != 'Pls select an option from the list below') return 'success';
-      else return null;
+      if (subject != 'Pls select an option from the list below') return 'success';
+        else return null;
   }
   getNoteValidationState() {
     const note = this.state.note.length;
@@ -97,7 +91,6 @@ class ContactForm extends Component {
 
 
   render() {
-
     const { selectedOption } = this.state.selectedOption;
     const value = selectedOption && selectedOption.value;
     const now = Date.now();
