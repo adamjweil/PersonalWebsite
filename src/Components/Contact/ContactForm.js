@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/lib/Button';
 import {FormGroup, ControlLabel, FormControl, HelpBlock} from 'react-bootstrap';
 import Select from 'react-select';
 
+
 class ContactForm extends Component {
   constructor() {
     super();
@@ -93,6 +94,7 @@ class ContactForm extends Component {
       note: ""
     });
   }
+
 
   render() {
 
@@ -194,7 +196,7 @@ class ContactForm extends Component {
                  />
                <FormControl.Feedback />
              </FormGroup>
-            <Button bsStyle="success" className="formButton" type="submit" style={{fontSize:'2rem'}}>Submit</Button>
+            <Button bsStyle="success" onClick={this.handleSubmit} className="formButton" type="submit" style={{fontSize:'2rem'}}>Submit</Button>
 
         </form>
       </div>
