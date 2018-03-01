@@ -237,12 +237,16 @@ header {
 .projectLinks {
   display: block;
   position: relative;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
 }
 .link {
+  margin-top: 10px;
   margin-left: 20%;
   display: inline-block;
   width: 150px;
+}
+.link h3 {
+  font-size: 20px;
 }
   /*<<---ProjectPage(Responsive)--->>*/
 @media (max-width: 600px) {
@@ -269,6 +273,7 @@ header {
   }
   .projectDescription p {
     width: 80%;
+    max-width: 400px;
   }
   .techTitles {
     margin-left: 0px;
@@ -279,7 +284,7 @@ header {
   }
   .techDetails {
     width: 100%;
-    min-height: 150px;
+    min-height: 200px;
     margin-top: 10px;
     position: relative;
     display: inline-block;

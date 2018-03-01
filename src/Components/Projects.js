@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Slide, Fade, Zoom } from 'react-slideshow-image';
+import Button from 'react-bootstrap/lib/Button';
 
 import CoinstacheSlideshow from './Projects/Coinstache/CoinstacheSlideshow';
 import CoinstachePhotos from './Projects/Coinstache/CoinstachePhotos';
@@ -54,11 +55,22 @@ const Projects = (props) => (
 
           <div className="projectLinks">
             <div className="link">
-              <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://github.com/adamjweil/CoinStash" target="_blank">GitHub</a></h4>
+              <Button
+                bsStyle="warning"
+                bsSize="large"
+                href="https://github.com/adamjweil/CoinStash" target="_blank">
+                <h3>GitHub</h3>
+                </Button>
             </div>
             <div className="link">
-            <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://coinstache-backend.herokuapp.com" target="_blank">Heroku</a></h4>
+              <Button
+                bsStyle="warning"
+                bsSize="large"
+                href="https://coinstache-backend.herokuapp.com" target="_blank">
+                <h3>Heroku</h3>
+                </Button>
             </div>
+            
           </div>
         </div>
 
@@ -105,11 +117,22 @@ const Projects = (props) => (
 
           <div className="projectLinks">
             <div className="link">
-              <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://github.com/adamjweil/AdamsEat-Review" target="_blank">GitHub</a></h4>
+                <Button
+                  bsStyle="warning"
+                  bsSize="large"
+                  href="https://github.com/adamjweil/AdamsEat-Review" target="_blank">
+                  <h3>GitHub</h3>
+                  </Button>
             </div>
             <div className="link">
-              <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://adams-eatandreview.herokuapp.com/" target="_blank">Heroku</a></h4>
+                <Button
+                  bsStyle="warning"
+                  bsSize="large"
+                  href="https://adams-eatandreview.herokuapp.com/" target="_blank">
+                  <h3>Heroku</h3>
+                  </Button>
             </div>
+
           </div>
         </div>
       </div>
@@ -141,10 +164,20 @@ const Projects = (props) => (
           </div>
           <div className="projectLinks">
             <div className="link">
-              <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://github.com/adamjweil/React-InstaClone" target="_blank">GitHub</a></h4>
+                <Button
+                  bsStyle="warning"
+                  bsSize="large"
+                  href="https://github.com/adamjweil/React-InstaClone" target="_blank">
+                  <h3>GitHub</h3>
+                </Button>
             </div>
             <div className="link">
-              <h4><i className="glyphicon glyphicon-chevron-right"></i><a href="https://react-instaclone.herokuapp.com/" target="_blank">Heroku</a></h4>
+              <Button
+                bsStyle="warning"
+                bsSize="large"
+                href="https://react-instaclone.herokuapp.com/" target="_blank">
+                <h3>Heroku</h3>
+              </Button>
             </div>
 
           </div>
