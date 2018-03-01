@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "fire-mail": "0.0.0",
     "nodemailer": "^4.6.0",
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.1",
