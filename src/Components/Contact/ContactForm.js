@@ -15,7 +15,8 @@ class ContactForm extends Component {
       phone: '',
       selectedOption: 'Pls select an option from the list below',
       note: "",
-      value: ''
+      value: '',
+      loadingModule: false
     },
     this.handleChange = this.handleChange.bind(this);
     this.handleFirstNameChange = this.handleFirstNameChange.bind(this);
