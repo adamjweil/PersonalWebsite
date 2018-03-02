@@ -10,6 +10,8 @@ import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import Resume from './Components/Resume';
 
+
+
 class App extends Component {
   render() {
     return (
@@ -19,7 +21,6 @@ class App extends Component {
             <Switch>
               <Route exact path="/" render={ () => <Home /> } />
               <Route path="/Projects" render={ () => <Projects /> } />
-              <Route path="/Resume" render={ () => <Resume /> } />
               <Route path="/Contact" render={ () => <Contact /> } />
             </Switch>
           </div>
