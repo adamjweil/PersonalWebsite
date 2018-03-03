@@ -16,7 +16,7 @@ class InstaClonePhotos extends React.Component {
   constructor() {
     super()
     this.state = {
-      mainPhotoURL: "https://user-images.githubusercontent.com/25589910/32192205-e35ae4a2-bd89-11e7-8e2b-28514266735e.png",
+      mainPhotoURL: "https://s3.amazonaws.com/aw-personal-website-images/Insta_MainPage.png",
       mainPhotoBlurb: "Main Page",
       activeIndex: 0
     };

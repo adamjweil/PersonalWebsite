@@ -25,7 +25,7 @@ class EatAndReviewPhotos extends React.Component {
   constructor() {
     super()
     this.state = {
-      mainPhotoURL: "https://user-images.githubusercontent.com/25589910/36454158-cae312b8-1668-11e8-8521-303fb4ea218e.png",
+      mainPhotoURL: "https://s3.amazonaws.com/aw-personal-website-images/Eat_MainPage.png",
       mainPhotoBlurb: "Main Page",
       activeIndex: 0
     };

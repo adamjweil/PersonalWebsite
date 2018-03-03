@@ -27,7 +27,7 @@ class CoinstachePhotos extends React.Component {
   constructor() {
     super()
     this.state = {
-      mainPhotoURL: "https://user-images.githubusercontent.com/25589910/36452888-2c7f27dc-1664-11e8-8a1c-c72dfae1e987.png",
+      mainPhotoURL: "https://s3.amazonaws.com/aw-personal-website-images/Coin_MainPage.png",
       mainPhotoBlurb: "Main Page",
       activeIndex: 0
     };
