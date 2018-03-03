@@ -1,13 +1,13 @@
 import React from 'react';
 
 const slides = [{
-  imageUrl: "https://user-images.githubusercontent.com/25589910/32192205-e35ae4a2-bd89-11e7-8e2b-28514266735e.png",
+  imageUrl: "https://s3.amazonaws.com/aw-personal-website-images/Insta_MainPage.png",
   caption: "Main Page"
   }, {
-  imageUrl: "https://user-images.githubusercontent.com/25589910/32192238-02305074-bd8a-11e7-99f5-6ca003f26e2a.png",
+  imageUrl: "https://s3.amazonaws.com/aw-personal-website-images/Insta_Profile.png",
   caption: "Profile Page"
   }, {
-  imageUrl: "https://user-images.githubusercontent.com/25589910/32192287-20180ca8-bd8a-11e7-81bd-c1fbb085eefc.png",
+  imageUrl: "https://s3.amazonaws.com/aw-personal-website-images/Insta_About2.png",
   caption: "About Page"
 }];
 
