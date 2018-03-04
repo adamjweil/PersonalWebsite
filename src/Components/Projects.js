@@ -45,7 +45,7 @@ const Projects = (props) => (
           </div>
 
           <div className="frontEnd">
-            <div className="techTitlesLong" style={{width:'160px;'}}>
+            <div className="techTitlesLong">
               <h4>FRAMEWORKS  <i className="glyphicon glyphicon-chevron-right"></i></h4>
             </div>
             <div className="techDetails">
@@ -70,7 +70,7 @@ const Projects = (props) => (
                 <h3>Heroku</h3>
                 </Button>
             </div>
-            
+
           </div>
         </div>
 
