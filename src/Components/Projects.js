@@ -78,7 +78,7 @@ const Projects = (props) => (
     </div>
     <div className="projectOverview">
       <div className="projectName">
-        <h2>Eat  Review</h2>
+        <h2>Eat & Review</h2>
       </div>
       <div className="projectTitle">
         <EatAndReviewPhotos />
