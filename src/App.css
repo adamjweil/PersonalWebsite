@@ -774,7 +774,7 @@ label {
     text-align: center;
   }
   .homeResumeContainer {
-    display: block;
+    display: inline-block;
     position: relative;
     width: 60%;
   }
@@ -813,6 +813,7 @@ label {
     width: 300px;
   }
   .homeResumeContainer {
+    display: block;
     width: 300px;
   }
 }
@@ -830,12 +831,17 @@ label {
 .resume {
   height: 1050px;
   width: 800px;
-  margin-left: 42%;
+  margin-left: 10%;
   margin-bottom: 200px;
   padding: 10px;
 }
 .printButton {
   margin-top: 10px;
+  /* width: 300px; */
+  align-items: center;
+}
+.showRes button {
+  margin-left: 20px;
 }
 @media (max-width: 600px) {
   .resume img {
@@ -851,7 +857,7 @@ label {
   }
   .printButton {
     margin-top: 10px;
-    width: 200px;
+    width: 100%;
   }
 }
 
